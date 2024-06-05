@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.first-container {
+    display: flex;
+    font-size: 160%;
+}
+.logo-img {
+    width: 45%;
+    height: 50%;
+    padding-left: 12px;
+    margin: 12px;
+    position: relative;
+    animation: slide-in 3s forwards;
+}
+.logo-img img {
+    width: 10%;
+    height: 25%;
+    border-radius: 85%;
+    animation: slide-in 3s forwards;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 9%;
+    left: 12%;
+    font-size: 155%;
+    color: rgb(219, 31, 122);
+    animation: slide-in 3s forwards; 
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.button-container {
+    position: absolute;
+    top: 7%;
+    right: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border: none;
+    padding: -1%;
+    margin-right: -650px;
+    cursor: pointer;
+}
+.button-container li {
+    display: inline;
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px;
+}
+.button-container li a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(210, 59, 124, 0.899);
+    color: white;
+    border-radius: 9px;
+    text-decoration: none; 
+}
+.button-container li a:hover {
+    background-color: rgb(203, 219, 31); 
+}
+.pic-moving {
+    width: 110%;
+    max-height: 150%;
+    padding-right: 20%;
+    margin: 110px;
+}
+.pic-moving img {
+    max-width: 35%;
+    max-height: 160%;
+    position: fixed;
+    padding: 10px;
+    margin-left: 120px;
+    border-radius: 50%;
+}
+.tag {
+    display: flex;
+    flex: 1;
+    text-align: start;
+    align-items: flex-start;
+    padding-top: 15%;
+    margin-left: -1px;
+}
+.tag pre {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: start;
+    font-size: 350%;
+    color: rgb(219, 31, 122);
+    padding: 60px;
+    margin-left: -1px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 130%;
+    color: rgb(219, 31, 122);
+}
+.footer-para {
+    margin: 0;
+}
